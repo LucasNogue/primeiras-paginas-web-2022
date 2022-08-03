@@ -1,9 +1,9 @@
 function trocarPokebola(classe) {
-    if(classe.src == "http://127.0.0.1:5500/images/pokebola-nao-favorita.png"){
-       return classe.src = "https://raw.githubusercontent.com/LucasNogue/primeiras-paginas-web-2022/images/pokebola-favorita.png";
+    if(classe.src == "images/pokebola-nao-favorita.png"){
+       return classe.src = "images/pokebola-favorita.png";
 
     }
-       return classe.src = "https://raw.githubusercontent.com/LucasNogue/primeiras-paginas-web-2022/images/pokebola-nao-favorita.png";
+       return classe.src = "images/pokebola-nao-favorita.png";
 }
 
 function exibirTodosPokemons() {
