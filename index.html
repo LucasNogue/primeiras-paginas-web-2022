@@ -4,7 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="images/pokebola.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
   </head>
-  <body></body>
+  <body>
+    
+    <header class="header-fixo">
+      <img id="pokebola" src="images/pokebola.png" alt="Pokébola">
+      <h1 id="logo-pokedex">POKÉDEX</h1>
+      <nav>
+        <ul>
+          <li> <a id="link-todos" onclick="exibirTodosPokemons()">Todos</a></li>
+          <li><a id="link-fire"  onclick="exibirPokemons('fire')">fire</a></li>
+          <li><a id="link-water" onclick="exibirPokemons('water')">water</a></li>
+          <li><a id="link-grass" onclick="exibirPokemons('grass')">grass</a></li>
+          <li><a id="link-electric" onclick="exibirPokemons('electric')">electric</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="area-cards">
+          <article class="corpo-card fire">
+          <div class="background-imagem-pokemon">
+            <img class="imagem-pokemon" src="images/charmander.png"  alt="imagem do charmander">
+          </div>
+            <h2 class="nome-pokemon">Charmander</h2>
+            <button class="botao-fire" disabled="disabled">fire</button>
+              <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card water">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/squirtle.png"  alt="imagem do squirtle">
+            </div>
+            <h2 class="nome-pokemon">Squirtle</h2>
+            <button class="botao-water" disabled="disabled">water</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card grass">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/bulbasaur.png"  alt="imagem do squirtle">
+            </div>
+            <h2 class="nome-pokemon">Bulbasaur</h2>
+            <button class="botao-grass" disabled="disabled">grass</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card electric">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/pikachu.png"  alt="imagem do pikachu">
+            </div>
+            <h2 class="nome-pokemon">pikachu</h2>
+            <button class="botao-electric" disabled="disabled">electric</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card fire">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/ponyta.png"  alt="imagem da ponyta">
+            </div>
+              <h2 class="nome-pokemon">Ponyta</h2>
+              <button class="botao-fire" disabled="disabled">fire</button>
+              <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card water">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/totodile.png" alt="imagem do totodile">
+            </div>
+            <h2 class="nome-pokemon">Totodile</h2>
+            <button class="botao-water" disabled="disabled">water</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card electric">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/jolteon.png"  alt="imagem do jolteon">
+            </div>
+            <h2 class="nome-pokemon">Jolteon</h2>
+            <button class="botao-electric" disabled="disabled">electric</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card grass">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/tangela.png"  alt="imagem do tangela">
+            </div>
+            <h2 class="nome-pokemon">Tangela</h2>
+            <button class="botao-grass" disabled="disabled">grass</button>
+            <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+          </article>
+
+          <article class="corpo-card fire">
+            <div class="background-imagem-pokemon">
+              <img class="imagem-pokemon" src="images/rapidash.png"  alt="imagem da rapidash">
+            </div>
+              <h2 class="nome-pokemon">Rapidash</h2>
+              <button class="botao-fire" disabled="disabled">fire</button>
+
+              <button onclick="trocarPokebola()">
+                <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+              </button>
+          </article>
+
+      </section>
+    </main>
+
+    <footer>
+        <p>Lucas Nogueira - Movimento Codar</p>
+    </footer>
+
+   <script src="js/main.js"></script>
+  </body>
 </html>

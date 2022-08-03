@@ -1,0 +1,278 @@
+body {
+    background: #000f26;
+    color: white;
+    font-family: 'Alegreya', serif;
+    
+}
+
+
+/*-----HEADER-----*/
+header {
+    position: fixed;
+    background: #262835;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+#pokebola {
+    position: absolute;
+    top: 7vh;
+    right: 120vh;
+    width: 7vh;
+   
+}
+
+#logo-pokedex {
+    position: absolute;
+    top: 7vh;
+    right: 85vh;
+    color: white;
+    font-family: "Pokemon";
+    font-size: 7vh;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+
+}
+
+nav {
+    position: absolute;
+    background: #262835;
+    bottom: 1vh;
+    left: 76vh;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 1.3vh;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px;
+    font-size: 3vh;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+a#link-water:link, a#link-water:visited {
+	text-decoration: underline overline;
+
+	}
+
+a#link-water:hover, .link-water-ativo  {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3dc7ef;
+    border-bottom: 2px solid #3dc7ef;
+    transition: .4s;
+
+}
+
+
+
+a#link-grass:hover, .link-grass-ativo {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #80c630;
+    border-bottom: 2px solid #80c630;
+    transition: .4s;
+
+}
+
+a#link-electric:hover, .link-electric-ativo {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #eed535;
+    border-bottom: 2px solid #eed535;
+    transition: .4s;
+
+}
+
+a#link-fire:hover, .link-fire-ativo  {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fd7d24;
+    border-bottom: 2px solid #fd7d24;
+    transition: .4s;
+
+}
+
+a#link-todos:hover, .link-todos-ativo  {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transition: .4s;
+
+}
+
+/*-----CARDS-----*/
+
+.area-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 200px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 50px;
+
+}
+
+.corpo-card {
+    position: relative;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    width: 280px;
+    transition: 1s;
+
+}
+
+.corpo-card:hover { 
+    margin-top: -10px;
+
+}
+
+.background-imagem-pokemon {
+    position: relative;
+    background: #424e61;
+    border-radius: .2rem;
+    height: 50%;
+    width: 100%;
+
+}
+
+.nome-pokemon {
+    position: absolute;
+    top: 70%;
+    align-self:flex-start;
+    padding-left: 7px;
+    color: #000f26;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Saira', sans-serif;
+    
+}
+
+.imagem-pokemon {
+    position: absolute;
+    width: 70%;
+    right: 10%;
+    top: 6%;
+
+}
+
+.botao-fire {
+    position: absolute;
+    top: 80%;
+    right: 80%;
+    background: #fd7d24;
+    color: #000f26;
+    border: 1px solid black;
+    border-radius: 10%;
+    height: 20px;
+    width: 50px;
+
+}
+
+.botao-water {
+    position: absolute;
+    top: 80%;
+    right: 80%;
+    background: #3dc7ef;
+    color: #000f26;
+    border: 1px solid black;
+    border-radius: 10%;
+    height: 20px;
+    width: 50px;
+
+}
+
+.botao-grass {
+    position: absolute;
+    top: 80%;
+    right: 80%;
+    background: #80c630;
+    color: #000f26;
+    border: 1px solid black;
+    border-radius: 10%;
+    height: 20px;
+    width: 50px;
+
+}
+
+.botao-electric {
+    position: absolute;
+    top: 80%;
+    right: 78%;
+    background: #eed535;
+    color: #000f26;
+    border: 1px solid black;
+    border-radius: 10%;
+    height: 20px;
+    width: 55px;
+
+}
+
+.imagem-pokebola-favorita {
+    position: absolute;
+    width: 15%;
+    right: 45%;
+    top: 85%;
+    cursor: pointer;
+
+}
+
+/*-----FOOTER-----*/
+
+
+footer {
+    position: relative;
+    background-color: #262835;
+    color: #FFF;
+    width: 100%;
+    height: 50px;    
+    text-align: center;
+    line-height: 100px;
+
+}
+
+/*-----RESPONSIVIDADE-----*/
+
+
+@media screen and (max-width: 480px) {
+ 
+   
+
+    #logo-pokedex {
+        position: static;
+        text-align: center;
+
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
