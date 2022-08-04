@@ -62,10 +62,6 @@ nav a {
 
 }
 
-a#link-water:link, a#link-water:visited {
-	text-decoration: underline overline;
-
-	}
 
 a#link-water:hover, .link-water-ativo  {
     cursor: pointer;
@@ -76,8 +72,6 @@ a#link-water:hover, .link-water-ativo  {
     transition: .4s;
 
 }
-
-
 
 a#link-grass:hover, .link-grass-ativo {
     cursor: pointer;

@@ -20,11 +20,11 @@
       <h1 id="logo-pokedex">POKÉDEX</h1>
       <nav>
         <ul>
-          <li> <a id="link-todos" onclick="exibirTodosPokemons()">Todos</a></li>
-          <li><a id="link-fire"  onclick="exibirPokemons('fire')">fire</a></li>
-          <li><a id="link-water" onclick="exibirPokemons('water')">water</a></li>
-          <li><a id="link-grass" onclick="exibirPokemons('grass')">grass</a></li>
-          <li><a id="link-electric" onclick="exibirPokemons('electric')">electric</a></li>
+          <li> <a id="link-todos" class="link-navbar link-todos-ativo" onclick="exibirTodosPokemons('todos') ">Todos</a></li>
+          <li><a id="link-fire"  class="link-navbar" onclick="exibirPokemons('fire')">fire</a></li>
+          <li><a id="link-water" class="link-navbar" onclick="exibirPokemons('water', this)">water</a></li>
+          <li><a id="link-grass" class="link-navbar" onclick="exibirPokemons('grass', this)">grass</a></li>
+          <li><a id="link-electric" class="link-navbar" onclick="exibirPokemons('electric', this)">electric</a></li>
         </ul>
       </nav>
     </header>
