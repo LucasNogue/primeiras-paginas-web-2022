@@ -1,5 +1,15 @@
+:root {
+    --color-primary:#000f26;
+    --color-secondary:#262835;
+    --corlor-water:#3dc7ef;
+    --color-grass:#80c630;
+    --color-electric:#eed535;
+    --color-fire:#fd7d24;
+
+}
+
 body {
-    background: #000f26;
+    background: var(--color-primary);
     color: white;
     font-family: 'Alegreya', serif;
     
@@ -10,7 +20,7 @@ body {
 
 header {
     position: fixed;
-    background: #262835;
+    background: var(--color-secondary);
     width: 100%;
     height: 25vh;
     overflow: hidden;
@@ -40,7 +50,7 @@ header {
 
 nav {
     position: absolute;
-    background: #262835;
+    background: var(--color-secondary);
     bottom: 1vh;
     left: 76vh;
 
@@ -68,8 +78,8 @@ a#link-water:hover, .link-water-ativo  {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    color: #3dc7ef;
-    border-bottom: 2px solid #3dc7ef;
+    color: var(--corlor-water);
+    border-bottom: 2px solid var(--corlor-water);
     transition: .4s;
 
 }
@@ -78,8 +88,8 @@ a#link-grass:hover, .link-grass-ativo {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    color: #80c630;
-    border-bottom: 2px solid #80c630;
+    color: var(--color-grass);
+    border-bottom: 2px solid var(--color-grass);
     transition: .4s;
 
 }
@@ -88,8 +98,8 @@ a#link-electric:hover, .link-electric-ativo {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    color: #eed535;
-    border-bottom: 2px solid #eed535;
+    color: var(--color-electric);
+    border-bottom: 2px solid var(--color-electric);
     transition: .4s;
 
 }
@@ -98,8 +108,8 @@ a#link-fire:hover, .link-fire-ativo  {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fd7d24;
-    border-bottom: 2px solid #fd7d24;
+    color: var(--color-fire);
+    border-bottom: 2px solid var(--color-fire);
     transition: .4s;
 
 }
@@ -158,7 +168,7 @@ a#link-todos:hover, .link-todos-ativo  {
     top: 70%;
     align-self:flex-start;
     padding-left: 7px;
-    color: #000f26;
+    color: var(--color-primary);
     font-size: 25px;
     font-weight: bold;
     font-family: 'Saira', sans-serif;
@@ -177,8 +187,8 @@ a#link-todos:hover, .link-todos-ativo  {
     position: absolute;
     top: 80%;
     right: 80%;
-    background: #fd7d24;
-    color: #000f26;
+    background: var(--color-fire);
+    color: var(--color-primary);
     border: 1px solid black;
     border-radius: 10%;
     height: 20px;
@@ -190,8 +200,8 @@ a#link-todos:hover, .link-todos-ativo  {
     position: absolute;
     top: 80%;
     right: 80%;
-    background: #3dc7ef;
-    color: #000f26;
+    background: var(--corlor-water);
+    color: var(--color-primary);
     border: 1px solid black;
     border-radius: 10%;
     height: 20px;
@@ -203,8 +213,8 @@ a#link-todos:hover, .link-todos-ativo  {
     position: absolute;
     top: 80%;
     right: 80%;
-    background: #80c630;
-    color: #000f26;
+    background: var(--color-grass);
+    color: var(--color-primary);
     border: 1px solid black;
     border-radius: 10%;
     height: 20px;
@@ -216,8 +226,8 @@ a#link-todos:hover, .link-todos-ativo  {
     position: absolute;
     top: 80%;
     right: 78%;
-    background: #eed535;
-    color: #000f26;
+    background: var(--color-electric);
+    color: var(--color-primary);
     border: 1px solid black;
     border-radius: 10%;
     height: 20px;
@@ -239,7 +249,7 @@ a#link-todos:hover, .link-todos-ativo  {
 
 footer {
     position: relative;
-    background-color: #262835;
+    background-color: var(--color-secondary);
     color: #FFF;
     width: 100%;
     height: 20vh;
