@@ -22,9 +22,9 @@
         <ul>
           <li> <a id="link-todos" class="link-navbar link-todos-ativo" onclick="exibirTodosPokemons('todos') ">Todos</a></li>
           <li><a id="link-fire"  class="link-navbar" onclick="exibirPokemons('fire')">fire</a></li>
-          <li><a id="link-water" class="link-navbar" onclick="exibirPokemons('water', this)">water</a></li>
-          <li><a id="link-grass" class="link-navbar" onclick="exibirPokemons('grass', this)">grass</a></li>
-          <li><a id="link-electric" class="link-navbar" onclick="exibirPokemons('electric', this)">electric</a></li>
+          <li><a id="link-water" class="link-navbar" onclick="exibirPokemons('water')">water</a></li>
+          <li><a id="link-grass" class="link-navbar" onclick="exibirPokemons('grass')">grass</a></li>
+          <li><a id="link-electric" class="link-navbar" onclick="exibirPokemons('electric')">electric</a></li>
         </ul>
       </nav>
     </header>
@@ -37,7 +37,7 @@
           </div>
             <h2 class="nome-pokemon">Charmander</h2>
             <button class="botao-fire" disabled="disabled">fire</button>
-              <img class="imagem-pokebola-favorita" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
+              <img class="imagem-pokebola-favorita" id="charmander" src="images/pokebola-nao-favorita.png" alt="imagem de uma pokébola" onclick="trocarPokebola(this)">
           </article>
 
           <article class="corpo-card water">
