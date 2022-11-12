@@ -17,3 +17,10 @@ A ideia inicial do desafio era criar um portal de receitas, mas eu mudei o tema 
 
 ## ✔️ Acesso e imagens do projeto
 `link do site:`https://lucasnogue.github.io/primeiras-paginas-web-2022/
+
+### RESULTADO
+
+
+
+![image-site-pokedex](https://user-images.githubusercontent.com/94400696/201492952-6cbd7c6d-f4ad-498e-98fd-b4b27ae87161.png)
+
